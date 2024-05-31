@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-co">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <link rel="shortcut icon" href="/imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+    <script src="https://kit.fontawesome.com/df9aec0fe6.js"
+      crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Menu</title>
+    <meta name="description" content="Um cardápio online para seu Negócio">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu/estilo.css" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <!--! MENU ENCABEZADO -->
+  <div class="contenedor__header">
+    <header class="cabecera">
+      <div class="logo">
+        <a href="#categories" onclick="seleccionar()"><img src="imgs/logo.png"
+            class="logo" alt="logo RJ/dev" /></a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#categories" onclick="seleccionar()">ENSALADAS</a></li>
+          <li><a href="#infantil" onclick="seleccionar()">MENU INFANTIL</a></li>
+          <li><a href="#especiales" onclick="seleccionar()">ESPECIALES</a></li>
+          <li><a href="#copas" onclick="seleccionar()">COPAS </a></li>
+          <li><a href="#variedad" onclick="seleccionar()">VARIEDAD</a></li>
+          <li><a href="#waffles" onclick="seleccionar()">WAFFLES</a></li>
+          <li><a href="#bebidas" onclick="seleccionar()">BEBIDAS</a></li>
+        </ul>
+      </nav>
+      <div class="nav__responsivo" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </header>
+  </div>
+  <body>
+    <div class="container">
+      <div class="container list-container">
+        <button id="btn-finish">Hacer Pedido</button>
+        <div id="list" class="ml-auto">
+          <p class="list-title"><b>Pedidos</b></p>
+          <h3 class="list-subtitle">Lista</h3>
+          <ul id="list-items"></ul>
+          <h3 class="list-subtitle">Total</h3>
+          <p id="list-total"><b>$0</b></p>
+          <br>
+          <div id="address-group">
+            <label for="address">Direccion de envio.</label>
+            <input type="text" id="address">
+            <button id="list-btn">Pedir</button>
+          </div>
+        </div>
+      </div>
+      <div class="group" id="categories"></div>
+    </div>
+    <script type="module" src="js/def.js"></script>
+    <script src="validacion.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,86 @@
+/*
+ html {
+     /* me permite deslizar cuando hago clic en los links del menu */
+scroll-padding-bottom: unset;
+}
+
+*/
+
+/* MENU */
+.contenedor__header {
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor__header header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: rgb(141, 211, 170);
+    width: 100%;
+    position: fixed;
+}
+
+.contenedor__header header .logo img {
+    height: 3rem;
+}
+
+.contenedor__header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor__header header nav ul li a {
+    font-family: 'Raleway';
+    text-align: none;
+    color: #e81111;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor__header header nav ul li a:hover {
+    color: #e45513;
+}
+
+.nav__responsivo {
+    background-color: #f5762c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px) {
+    nav {
+        display: none;
+    }
+
+    .nav__responsivo {
+        display: block;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: rgb(151, 245, 155);
+        width: 180px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
