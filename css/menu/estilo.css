@@ -50,7 +50,7 @@ scroll-padding-bottom: unset;
 .nav__responsivo {
     background-color: #f5762c;
     color: #fff;
-    padding: 5px 10px;
+    padding: 7px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
