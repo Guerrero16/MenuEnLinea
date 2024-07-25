@@ -104,5 +104,5 @@ item.add("Paleta Aloha Mix", "", 3500, "aloha-mix.jpg", "empacados");
 item.add("Paleta Aloha Limon", "", 2000, "aloha-limon.jpg", "empacados");
 item.add("Paleta Aloha Mango-Biche", "", 2500, "aloha-mango.jpg", "empacados");
 item.add("Paleta Tosh", "", 3000, "pasion.jpg", "empacados");
-item.add("Paleta Pasion", "", 5000, "bocatto.jpg", "empacados");
+item.add("Paleta Pasion", "", 5000, "Pasion.jpg", "empacados");
 item.add("Paleta Chocolisto", "", 2000, "chocolisto.jpg", "empacados");
