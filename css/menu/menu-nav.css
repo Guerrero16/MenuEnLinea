@@ -1,3 +1,14 @@
+:root {
+    --color-primario: #F8EDED;
+    --color-sec: #FF8225;
+    --color-ter: #B43F3F;
+    --color-cuarto: #173B45;
+    --color-quinto: #5f2121;
+    --color-sexto: #cdccb4;
+    --color-sept: #15b64d;
+    --color-octa: #000000;
+}
+
 .menu__list,
 .menu__nav {
     display: flex;
@@ -10,6 +21,7 @@
 .menu__list__item__contato {
     color: var(--color-cuarto);
 }
+
 .menu__list__item a {
     font-weight: bold;
 }

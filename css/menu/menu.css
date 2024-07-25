@@ -1,13 +1,14 @@
-.menu{
+.menu {
     display: flex;
-    background-color: var(--color-sec);
+    background-color: #00ff40;
     justify-content: space-between;
     padding: 1rem 2rem;
-  
+
 }
+
 @media (max-width:425px) {
-    .menu{
+    .menu {
         padding: 0.5rem 1rem;
     }
-    
+
 }

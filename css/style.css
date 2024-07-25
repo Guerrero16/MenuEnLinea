@@ -1,3 +1,14 @@
+:root {
+    --color-primario: #F8EDED;
+    --color-sec: #FF8225;
+    --color-ter: #B43F3F;
+    --color-cuarto: #173B45;
+    --color-quinto: #5f2121;
+    --color-sexto: #cdccb4;
+    --color-sept: #15b64d;
+    --color-octa: #000000;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,11 +20,17 @@ body {
 }
 
 body {
-    background: #3888e7;
+    background: var(--color-primario);
+    box-sizing: border-box;
+    font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
 }
 
 label {
-    color: #bbe8bb;
+    color: var(--color-primario);
     display: block;
     margin-bottom: 6px;
 }
@@ -39,11 +56,11 @@ label {
 }
 
 .group-title {
-    color: #d56816;
+    color: var(--color-ter);
     margin: 1.5rem 2.2rem;
     font-size: 50px;
     text-align: left;
-    border-bottom: 2px solid #15b64d;
+    border-bottom: 2px solid var(--color-sept);
     width: max-content;
     font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
@@ -56,7 +73,7 @@ label {
     margin: 5px;
     display: inline-block;
     border-radius: 4px;
-    background: #257b43;
+    background: var(--color-sec);
     overflow: hidden;
 }
 
@@ -70,11 +87,11 @@ label {
 .group-item-name {
     margin: 0.5rem;
     text-align: center;
-    color: #fff;
+    color: var(--color-cuarto);
 }
 
 .group-item-desc {
-    color: #fff;
+    color: var(--color-octa);
     text-align: justify;
     width: 90%;
     margin: 0 auto;
@@ -82,7 +99,7 @@ label {
     height: 50px;
     overflow-y: scroll;
     overflow: hidden;
-   
+
 }
 
 .group-item-desc::-webkit-scrollbar {
@@ -90,28 +107,28 @@ label {
 }
 
 .group-item-price {
-    background: #f4701c;
+    background: var(--color-ter);
     margin: 0.6rem 0;
     border-radius: 0 10px 10px 0;
     padding: 0.5rem;
-    color: #f0f5f9;
+    color: var(--color-sexto);
     width: max-content;
     font-weight: bold;
 }
 
 .group-item-total {
     text-align: center;
-    color: #fff;
+    color: var(--color-octa);
     font-style: italic;
 }
 
 .ctrl-item-total {
     width: max-content;
     margin: 0.5rem auto;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-octa);
     border-radius: 8px;
     padding: 0 0rem;
-    color: #fff;
+    color: var(--color-octa);
     overflow: hidden;
     height: max-content;
     display: -webkit-flex;
@@ -131,7 +148,7 @@ label {
     padding: 0.6rem 1rem;
     height: 100%;
     outline: none;
-    color: #fff;
+    color: var(--color-octa);
     display: block;
     transition: 0.4s;
     height: 100%;
@@ -140,15 +157,15 @@ label {
 
 .ctrl-item-total button:hover,
 .ctrl-item-total div:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-primario);
 }
 
 #list {
     width: 300px;
     height: max-content;
     border-radius: 8px;
-    box-shadow: 0 0 1px #3f65e5;
-    background: #d66822;
+    box-shadow: 0 0 1px var(--color-cuarto);
+    background: var(--color-cuarto);
     padding: 1rem;
     display: none;
     margin-top: 1rem;
@@ -156,7 +173,7 @@ label {
 }
 
 .list-container {
-    margin-top:65px;
+    margin-top: 65px;
     position: fixed;
     right: 0;
     left: 0;
@@ -164,27 +181,27 @@ label {
 }
 
 .list-title {
-    color: #fff;
+    color: var(--color-sexto);
     text-align: center;
     font-size: 30px;
 }
 
 .list-subtitle {
-    color: #fff;
+    color: var(--color-sexto);
     margin-top: 1rem;
     margin-bottom: 4px;
 }
 
 #list-items {
-    color: #fff;
+    color: var(--color-sexto);
     list-style: none;
     padding: 1rem;
 }
 
 #list-total {
-    color: #fff;
+    color: var(--color-sexto);
     padding: 0.3rem 0.6rem;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-sexto);
     width: max-content;
     font-size: 18px;
     border-radius: 30px;
@@ -192,10 +209,10 @@ label {
 
 #list-btn {
     all: unset;
-    background: rgba(26, 14, 5, 0.3);
+    background: var(--color-ter);
     border-radius: 30px;
     padding: 0.4rem 2rem;
-    color: #ffffff;
+    color: var(--color-sexto);
     font-weight: bold;
     display: block;
     margin: 0.5rem auto;
@@ -203,8 +220,8 @@ label {
 }
 
 #list-btn:hover {
-    background: #26aa21;
-    color: #f2f4f3;
+    background: var(--color-sept);
+    color: var(--color-sexto);
 }
 
 #address-group {
@@ -214,19 +231,19 @@ label {
 
 #address {
     all: unset;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-sexto);
     border-radius: 8px;
     padding: 0.2rem;
-    color: #fff;
+    color: var(--color-sexto);
 }
 
 #btn-finish {
     all: unset;
     padding: 0.5rem 0;
-    min-width: 115px;
-    background: #fff;
-    color: #400933;
-    font-style: italic;
+    min-width: 120px;
+    background: var(--color-sept);
+    color: var(--color-primario);
+    font-style: Raleway, italic;
     font-weight: bold;
     border-radius: 0 0 0 10px;
     transition: 0.7s;
@@ -236,12 +253,12 @@ label {
 }
 
 #btn-finish:hover {
-    background: #a83124;
-    color: #fff;
+    background: var(--color-sec);
+    color: var(--color-octa);
 }
 
 #btn-finish:active {
-    background: #ab243f;
+    background: var(--color-quinto);
 }
 
 @media (max-width: 720px) {
