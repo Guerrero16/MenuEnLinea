@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menu/estilo.css" />
   <link rel="stylesheet" href="main.css">
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhjUGwK6jP7OxY46IYKwWfbL6JizVgSoU&callback=initMap"
+    async defer></script> -->
   <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
@@ -54,7 +56,9 @@
         <p id="list-total"><b>$0</b></p>
         <br>
         <div id="address-group">
-          <label for="address">Direccion de envio.</label>
+          <label for="address">Comparte tu ubicación para la entrega.</label>
+          <button id="shareLocation">Enviar ubicación</button>
+          <div id="map"></div>
           <input type="text" id="address">
           <button id="list-btn">Pedir</button>
         </div>
@@ -62,7 +66,11 @@
     </div>
     <div class="group" id="categories"></div>
   </div>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhjUGwK6jP7OxY46IYKwWfbL6JizVgSoU&loading=async&libraries=places&callback=initMap">
+    </script>
   <script type="module" src="js/def.js"></script>
+  <script src="/js/methods/mapsApi.js"></script>
   <script src="validacion.js"></script>
 </body>
 

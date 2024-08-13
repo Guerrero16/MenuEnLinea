@@ -170,6 +170,8 @@ label {
     display: none;
     margin-top: 1rem;
     margin-right: 1rem;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .list-container {
@@ -225,8 +227,11 @@ label {
 }
 
 #address-group {
+    display: flex;
     margin: 0 auto;
     width: max-content;
+    flex-direction: column;
+
 }
 
 #address {
@@ -235,6 +240,29 @@ label {
     border-radius: 8px;
     padding: 0.2rem;
     color: var(--color-sexto);
+    font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#map {
+    width: 100%;
+    height: 100px;
+    border: 1px solid var(--color-sexto);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
+#shareLocation {
+    background-image: url(/imgs/mapa.png);
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+    border: 1px solid var(--color-sec);
+    font-family: "Raleway", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 2rem;
+    border-radius: 8px;
+    padding: 0.2rem;
+    padding-right: 0.2rem;
+    margin-bottom: 0.5rem;
 }
 
 #btn-finish {
